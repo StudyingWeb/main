@@ -17,7 +17,7 @@
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
   }
   
 ::-webkit-scrollbar-track {
@@ -31,17 +31,18 @@
 
 .wall
 {
+    overflow: hidden;
     position: relative;
     height: 100%;
     width: 100%;
     background-image: url("wall2.jfif");
     object-fit: cover;
-    margin-bottom: 25px;
 }
 
 
 header
 {
+    z-index: 2;
     display: flex;
     align-items: center;
     position: fixed;
@@ -49,13 +50,12 @@ header
     height: 7%;
     left: 0;
     top:0;
-    z-index: 1;
     transition: all 0.4s ease;
 }
 
- .logo
+ .wall .logo
  {
-    position: fixed;
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,11 +66,37 @@ header
     font-size: 100px;
     color: white;
     /* background: red; */
-    transition: all 0.4s ease;
+    transition: all 1.2s ease;
 }
 
 
-.logo a
+.logo-nav
+{
+    position: absolute;
+    height: 25px;
+    width: 175px;
+    font-size: 25px;
+    left: 0.5%;
+    /* animation-delay: 0.6s; */
+    top: calc(-100%*8);
+    transition: all 1.2s ease;
+}
+
+.logo-nav a
+{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white; 
+}
+
+.logo-nav.calm
+{
+    top: 20%;
+    transition: all 1.0s ease;
+}
+
+.wall .logo a
 {
     display: flex;
     align-items: center;
@@ -78,16 +104,18 @@ header
     color: white;
 }
 
-.logo.calm
+.wall .logo.calm
 {
-    height: 25px;
-    width: 175px;
-    font-size: 25px;
-    left: 10px;
-    top: 1.65%;
+    transition: all 1.2s ease;
+    top: calc(2*100%);
 }
 
 p
 {
     font-size: 35px;
+}
+
+.main
+{
+    z-index: 2;
 }
