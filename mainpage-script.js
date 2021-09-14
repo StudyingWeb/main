@@ -8,14 +8,13 @@ let hgt=window.innerHeight;
 
 window.addEventListener('scroll', ()=> 
     {
-        if (window.scrollY>hgt/3)
+        if (window.scrollY>hgt-70)
         {
-            console.log(1);
             nav.style.background="rgba(0,0,0,0.1)";
         }
         else
         {
-            nav.style.background=""; 
+            nav.style.background="";
         }
 
         if (window.scrollY>50)
