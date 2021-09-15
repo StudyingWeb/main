@@ -12,11 +12,11 @@ window.addEventListener('scroll', ()=>
     {
         if (window.scrollY>hgt-70)
         {
-            nav.style.background="blue";
+            nav.classList.add("calm");
         }
         else
         {
-            nav.style.background="";
+            nav.classList.remove("calm");
         }
 
         if (window.scrollY>50)

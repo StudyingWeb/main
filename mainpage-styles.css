@@ -26,7 +26,8 @@
   }
   
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, #79e2fc, #10fdc2);
+    background-image: url("wall4.jpg!d");
+    /* background: linear-gradient(180deg, #79e2fc, #10fdc2); */
   }
 
 .wall
@@ -35,7 +36,8 @@
     position: relative;
     height: 100%;
     width: 100%;
-    background-image: url("wall2.jfif");
+    background-image: url("wall4.jpg!d");
+    /* background-repeat: no-repeat; */
     object-fit: cover;
 }
 
@@ -51,6 +53,12 @@ header
     left: 0;
     top:0;
     transition: all 0.4s ease;
+}
+
+header.calm
+{
+    /* backdrop-filter: blur(5px); */
+    background: rgb(53, 8, 83);
 }
 
  .wall .logo
@@ -69,6 +77,25 @@ header
     transition: all 1.2s ease;
 }
 
+.wall .logo a i
+{
+    pointer-events: none;
+}
+
+.wall .logo a span
+{
+    pointer-events: none;
+}
+
+.logo-nav a i
+{
+    pointer-events: none;
+}
+
+.logo-nav a span
+{
+    pointer-events: none;
+}
 
 .logo-nav
 {
