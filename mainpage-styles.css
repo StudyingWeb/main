@@ -58,8 +58,18 @@ header
 header.calm
 {
     /* backdrop-filter: blur(5px); */
-    background: rgb(53, 8, 83);
+    background: rgba(53, 8, 83 , 0.92);
+    z-index: 3;
 }
+
+
+.main p { 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    text-align: justify;
+    font-size: 24px;
+}
+
 
  .wall .logo
  {
